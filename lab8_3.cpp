@@ -3,6 +3,15 @@ using namespace std;
 
 char before(char x){
 	//Write your function definition here
+	char c = x;
+	while (isupper(c)){
+		if (c == 'A'){
+			return 'Z';
+		}else{
+			return c-1;
+		}
+	}
+	return '0';
 }
 
 int main(){
